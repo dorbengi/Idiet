@@ -1,0 +1,192 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+
+/* in grid view - hide ingredients */
+
+.meal-card-2 .meal-card-ingredients {
+    display: none;
+}
+
+#add-meal-fields-container {
+    display: none;
+}
+
+#add-meal-buttons-container {
+    display: none;
+}
+
+
+/* meals card container */
+
+#meals-cards-container {}
+
+
+/* meals list headers  (DATE) */
+
+#meals-cards-container h3 {
+    text-align: center;
+    padding: 4vmin;
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+    text-transform: uppercase !important;
+    margin-bottom: 0.25rem !important;
+    color: #5a5b647c;
+}
+
+
+/* card */
+
+#meals-card {}
+
+#meals-card .card-header h6 {
+    margin-bottom: auto;
+}
+
+
+/* card header buttons container */
+
+#meals-card .card-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: auto;
+}
+
+
+/* card header buttons  */
+
+#meals-card .card-header i {
+    margin-left: 10px;
+}
+
+#meals-card .card-header i:hover {
+    cursor: pointer;
+    color: #5a5b64;
+    font-weight: 900;
+}
+
+
+/* card body TYPE div  */
+
+#meals-card .card-body :nth-child(1) {
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+    font-size: 1.2rem;
+    text-transform: uppercase !important;
+    line-height: 1.2;
+    margin-bottom: 0.25rem !important;
+}
+
+
+/* card body CALORIES div  */
+
+#meals-card .card-body :nth-child(2) {
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+
+/* meal card BREAKFAST */
+
+.breakfast-meals .meal-card {
+    border-left: .35rem solid #f6c23e!important;
+}
+
+
+/* meal card  BREAKFAST meal type field */
+
+.breakfast-meals .meal-card .card-body div:nth-child(1) {
+    color: #f6c23e !important;
+}
+
+
+/* meal card background BREAKFAST*/
+
+.breakfast-meals div div::before {
+    color: #dddfeb!important;
+    font-weight: 900;
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 11VMIN;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-variant: normal;
+    top: 9vmin;
+    right: 5vmin;
+    content: "\f0f4";
+}
+
+
+/* meal card LUNCH */
+
+.lunch-meals .meal-card {
+    border-left: .35rem solid #36b9cc!important;
+}
+
+
+/* meal card  LUNCH meal type field */
+
+.lunch-meals .meal-card .card-body div:nth-child(1) {
+    color: #36b9cc !important;
+}
+
+
+/* meal card background LUNCH */
+
+.lunch-meals div div::before {
+    color: #dddfeb!important;
+    font-weight: 900;
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 11VMIN;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-variant: normal;
+    top: 9vmin;
+    right: 5vmin;
+    content: "\f805";
+}
+
+
+/* meal card DINNER */
+
+.dinner-meals .meal-card {
+    border-left: .35rem solid #1cc88a!important;
+}
+
+
+/* meal card  DINNER meal type field */
+
+.dinner-meals .meal-card .card-body div:nth-child(1) {
+    color: #1cc88a !important;
+}
+
+
+/* meal card backgrond DINNER */
+
+.dinner-meals div div::before {
+    color: #dddfeb!important;
+    font-weight: 900;
+    position: absolute;
+    font-family: 'FontAwesome';
+    font-size: 11vmin;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-variant: normal;
+    top: 9vmin;
+    right: 5vmin;
+    content: "\f7ec";
+}

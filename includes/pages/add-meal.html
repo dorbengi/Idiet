@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>IDIET Add New Meal</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/add-meal.css">
+    <script src="https://kit.fontawesome.com/43915e3dcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+
+<body>
+
+    <!-- SIDE NAVBAR -->
+    <div class="sidenav">
+        <a href="../../index.html">idiet</a>
+        <hr>
+        <!-- Topbar Navbar -->
+        <ul>
+            <!-- Nav Item - Profile -->
+            <li>
+                <a href="../../index.html">Dashboard</a>
+            </li>
+            <!-- Nav Item - Add meal -->
+            <li>
+                <a href="#">add meal</a>
+            </li>
+            <!-- Nav Item - my meals -->
+            <li>
+                <a href="meals.html">my meals</a>
+            </li>
+            <!-- Nav Item - Guide -->
+            <li>
+                <a href="#">Guide</a>
+            </li>
+            <!-- Nav Item - Settings -->
+            <li>
+                <a href="#">Settings</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /SIDE NAVBAR -->
+
+    <!--  -->
+
+    <!-- CONTENT -->
+    <div id="content">
+
+        <!-- TOP NAVBAR -->
+        <nav class="navbar navbar-expand mb-4">
+            <!-- Nav -->
+            <ul class="navbar-nav">
+                <!-- Nav Item - Alerts -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button">
+                        <i class="fas fa-bell fa-fw"></i>
+                    </a>
+                </li>
+                <!-- Nav Item - Messages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button">
+                        <i class="fas fa-envelope fa-fw"></i>
+                    </a>
+                </li>
+                <!-- Nav Item - User Information -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button">
+                        <span id="user-name"></span>
+                        <img class="img-profile rounded-circle" style="width: 60px; height: 60px;" src="https://www.manufacturingusa.com/sites/manufacturingusa.com/files/default.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /TOP NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+
+            <div id="add-meal-container">
+                <!-- Meal Card  -->
+                <div id="add-meal-card" class="col-xl-10 mb-4">
+                    <div class="card">
+                        <!-- Card Header -->
+                        <div class="card-header">
+                            <h6>create new meal</h6>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <form>
+                                <!--  -->
+                                <div class="row">
+                                    <!-- meal id -->
+                                    <div class="col">
+                                        <label>Meal ID</label>
+                                        <input type="text" class="form-control" id="create-meal-input-field-id" disabled>
+                                    </div>
+                                    <!-- meal type -->
+                                    <div class="col">
+                                        <label>Meal Type</label>
+                                        <select class="form-control">
+                                            <option>Other</option>
+                                            <option>Breakfast</option>
+                                            <option>lunch</option>
+                                            <option>Dinner</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- meal date -->
+                                    <div class="col-xl-6">
+                                        <label>Meal Date</label>
+                                        <input type="date" class="form-control" placeholder="meal date">
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <label> Ingredients</label>
+                                <div class="row" id="add-meal-fields-container">
+                                    <!-- meal ingredients -->
+                                    <div class="col-xl-6">
+                                        <input onkeydown="addInputForIngredients()" type="text" id="ingredient-1" class="form-control" placeholder="Ingredient">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="addNewMeal()">Add meal</button>
+                                <!--  -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- /MAIN -->
+
+        <!--  -->
+
+        <!-- FOOTER -->
+        <footer class="sticky-footer">
+            <div class="copyright text-center">
+                <span>Copyright © FT & DBG</span>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- spells -->
+    <script src="../scripts/meals.js"></script>
+    <script src="../scripts/add-meal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>

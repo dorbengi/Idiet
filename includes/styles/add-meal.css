@@ -1,0 +1,18 @@
+
+
+/* TOP NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+/* add meal card */
+#add-meal-card{
+    margin: auto;
+}
+
+/* add meal ingredient input field */
+#add-meal-fields-container div input{
+    margin-top: 3vmin;
+
+}
